@@ -1,0 +1,42 @@
+{
+  "name": "logseq-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Logseq — read, write, search, and manage your Logseq graph through the Model Context Protocol.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "logseq-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "logseq",
+    "model-context-protocol",
+    "knowledge-management",
+    "ai",
+    "claude"
+  ],
+  "author": "Wesley Weng",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsiang119/logseq-mcp-server"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "hono": "^4.11.8",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
